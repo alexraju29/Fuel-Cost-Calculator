@@ -1,10 +1,12 @@
+// Calculate Button
 function calculate(){
 
     var price = document.getElementById("price").value
     var distance = document.getElementById("distance").value
-    var milage = document.getElementById('milage').value
-
-    if (price == "" || distance == "" || milage == ""){
+    var mileage = document.getElementById('mileage').value
+    
+    // For Empty Entry 
+    if (price == "" || distance == "" || mileage == ""){
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -16,18 +18,19 @@ function calculate(){
     document.getElementById("result").style.display = "block";
     pricef=parseFloat(price)
     distancef=parseFloat(distance)
-    milagef=parseFloat(milage)
-    var result = distancef/milagef*pricef
+    mileagef=parseFloat(mileage)
+    var result = distancef/mileagef*pricef
 
     var finalresult = "You need "+result.toFixed(2)+"₹";
     document.getElementById("result").innerHTML = finalresult;
 
 }
 
+// Clear Button
 function clearScreen(){
 
     document.getElementById("price").value = "";
     document.getElementById("distance").value = "";
-    document.getElementById('milage').value = "";
+    document.getElementById('mileage').value = "";
     document.getElementById("result").style.display = "none";
 }
