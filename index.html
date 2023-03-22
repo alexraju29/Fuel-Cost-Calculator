@@ -35,6 +35,7 @@
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <button type="button" onclick="costClick()" id="cost-button" class="btn btn-primary">Cost</button>
                         <button type="button" onclick="distanceClick()" id="distance-button" class="btn btn-outline-primary">Distance</button>
+                        <button type="button" onclick="mileageClick()" id="mileage-button" class="btn btn-outline-primary">Mileage</button>
                       </div>
                     <h1 class="heading" id="main-heading">Fuel Cost Calculator</h1>
                     <img class="main-image" id="main-image-id" src="assets/images/carbon-calculator.gif">
@@ -59,7 +60,7 @@
                         <div class="form-floating mb-3 input-form">
                             <input type="number" class="form-control" id="mileage" name="mileage"
                                 placeholder="Mileage">
-                            <label for="floatingInput">Enter Mileage (km/l)</label>
+                            <label for="floatingInput" id="label-for-mileage">Enter Mileage (km/l)</label>
                         </div>
 
                         <button type="button" onclick="calculate()" class="btn btn-primary">Calculate</button>
