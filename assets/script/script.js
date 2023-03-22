@@ -91,7 +91,7 @@ function distanceClick(){
   document.getElementById("main-heading").innerHTML = "Distance Calculator";
   document.getElementById("main-image-id").src = "assets/images/distance.gif";
   document.getElementById("label-id").innerHTML = "Enter Amount you have (₹)";
-  document.getElementById("label-for-mileage").innerHTML = "Enter Mileage (km/l)";
+  document.getElementById("label-for-mileage").innerHTML = "Enter Mileage (km/L)";
 
   value = 2
 
@@ -115,7 +115,7 @@ function mileageClick(){
   }
   document.getElementById("main-heading").innerHTML = "Mileage Calculator";
   document.getElementById("main-image-id").src = "assets/images/mileage.gif";
-  document.getElementById("label-id").innerHTML = "Enter Distance Traveled(km)";
+  document.getElementById("label-id").innerHTML = "Enter Distance Traveled (km)";
   document.getElementById("label-for-mileage").innerHTML = "Enter Amount of Fuel filled (₹)";
   value = 3
 
