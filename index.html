@@ -32,8 +32,12 @@
             <div class="row">
                 <!-- Left-Section -->
                 <div class="col-lg-6 left-side">
-                    <h1 class="heading">Fuel Cost Calculator</h1>
-                    <img class="main-image" src="assets/images/carbon-calculator.gif">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" onclick="costClick()" id="cost-button" class="btn btn-primary">Cost</button>
+                        <button type="button" onclick="distanceClick()" id="distance-button" class="btn btn-outline-primary">Distance</button>
+                      </div>
+                    <h1 class="heading" id="main-heading">Fuel Cost Calculator</h1>
+                    <img class="main-image" id="main-image-id" src="assets/images/carbon-calculator.gif">
                 </div>
                 <!-- Right-Section -->
                 <div class="col-lg-6 right-side">
@@ -50,7 +54,7 @@
                         <div class="form-floating mb-3 input-form">
                             <input type="number" class="form-control" id="distance" name="distance"
                                 placeholder="Distance">
-                            <label for="floatingInput">Enter Distance (km)</label>
+                            <label for="floatingInput" id="label-id">Enter Distance (km)</label>
                         </div>
                         <div class="form-floating mb-3 input-form">
                             <input type="number" class="form-control" id="mileage" name="mileage"
