@@ -22,17 +22,17 @@ function calculate(){
     mileagef=parseFloat(mileage)
     if (value == 1){
         var result = distancef/mileagef*pricef;
-        var finalresult = "You need "+result.toFixed(2)+"₹";
+        var finalresult = "You need "+result.toFixed(2)+" ₹";
         document.getElementById("result").innerHTML = finalresult;
     }
     else if(value == 2){
         var result = distancef*mileagef/pricef;
-        var finalresult = "You can travel "+result.toFixed(2)+"kms";
+        var finalresult = "You can travel "+result.toFixed(2)+" kms";
         document.getElementById("result").innerHTML = finalresult;
     }
     else{
       var result = distancef*pricef/mileagef;
-        var finalresult = "You have the Mileage "+result.toFixed(2)+"km/L";
+        var finalresult = "You have the Mileage "+result.toFixed(2)+" km/L";
         document.getElementById("result").innerHTML = finalresult;
     }
 
@@ -67,7 +67,7 @@ function costClick(){
   document.getElementById("main-heading").innerHTML = "Fuel Cost Calculator";
   document.getElementById("main-image-id").src = "assets/images/carbon-calculator.gif";
   document.getElementById("label-id").innerHTML = "Enter Distance to cover (km)";
-  document.getElementById("label-for-mileage").innerHTML = "Enter Mileage (km/l)";
+  document.getElementById("label-for-mileage").innerHTML = "Enter Mileage (km/L)";
   value = 1
 
   
